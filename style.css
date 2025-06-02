@@ -1,0 +1,181 @@
+/* modify entirely the page */
+body {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+strong {
+    color: #64745d;
+}
+
+/* modify the header section */
+.header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin: 0%;
+    padding: 0%;
+    place-items: center;
+    align-content: center;
+    gap: 8vh;
+    height:100dvh
+}
+    .photo {
+        height: auto;
+        width: clamp(12rem, 20vw, 33rem);
+    }
+
+    .intro {
+        text-align: center;
+        line-height: 0.76;
+    }
+    .name {
+        font-size: clamp(1.8rem,3vw,5rem);
+        color: #74876c;
+        text-shadow: 2px 2px 0px rgb(168, 180, 164);
+    }
+
+    .text-intro {
+        font-size: clamp(1rem,1.5vw,2.5rem);
+        filter: opacity(70%);
+        font-style: italic;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-grow: row;
+        padding: 0px;
+        list-style: none;
+        gap: clamp(1rem,1.5vw,2.5rem);
+        justify-content: center;
+    }
+
+        .contact-logo {
+            height: auto;
+            width: clamp(2.5rem, 4vw, 6.5rem);
+        }
+
+/* modify the sections */
+.sections {
+    margin: 0px 4%;
+    line-height: 1.04
+}
+.section-title {
+    font-size: clamp(1.5rem,2vw,3.5rem);
+    margin: 5dvh 0%;
+    text-align: center;
+    color: #74876c;
+    text-shadow: 2px 2px 0px rgb(168, 180, 164);
+}
+
+/* modify all the experiences */
+.experiences-sections {
+    display: grid;
+    grid-template-columns: 61% 39%;
+    grid-template-rows: 1fr 1fr;;
+    row-gap: 5px; /* to check */
+    column-gap: 5px; /* to check */
+    padding: 0%;
+    margin-bottom: 3%;
+}
+
+/* modify the main experience module */
+.main-experience-module {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    font-size: clamp(0.75rem,0.88vw,1.5rem);
+    column-gap: 0%;
+    row-gap: 0%;
+    padding: 1%;
+    border: 2px solid #74876c;
+    border-radius: 8px;
+}
+    .main-experience-logo-link {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0%;
+        padding: 1% 0% 0% 1%;
+    }
+        .main-experience-logo {
+            height: auto;
+            width: clamp(3rem, 4vw, 7rem);
+            filter: grayscale(100%);
+        }
+    .main-experience-content {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: justify;
+        height: fit-content;
+        margin: 0%;
+        padding: 0%;
+    }
+    .main-experience-projects {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content:baseline;
+        margin: 0%;
+        padding: 0%;
+        row-gap: 2%;
+    }
+        .project-title {
+            font-size: clamp(0.75rem, 1vw, 1.5rem);
+            text-align:top;
+            margin: 0%;
+            padding: 0%;
+        }
+        .project-logo {
+        border-radius: 8px;
+        height: auto;
+        width: clamp(1rem, 9vw, 16rem);
+        filter: grayscale(100%);
+    }
+/* modify the derivates module experience */
+.derivate-experience-module-1 {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: clamp(0.5rem,0.7vw,1rem);
+    border: 2px solid #74876c;
+    border-radius: 8px;
+    padding: 1%;
+    margin: 0%;
+}
+
+.derivate-experience-module-2 {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: clamp(0.5rem,0.7vw,1rem);
+    border: 2px solid #74876c;
+    border-radius: 8px;
+    padding: 1%;
+    margin: 0%;
+}
+
+.derivate-experience-logo-link {
+    margin: 0%;
+    padding: 1% 1% 0% 1%;
+}
+
+.derivate-experience-logo {
+    height: 40px;
+    filter: grayscale(100%);
+}
+
+.derivate-experience-content {
+    text-align: justify;
+    align-items: center;
+    margin: 0%;
+    padding: 0% 1% 1% 1%;
+}
+
+/* doit faire en sorte que responsive : enlever les PX et les blocks */
