@@ -58,6 +58,21 @@ document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
     });
 });
 
+document.querySelectorAll('.contact-logo[data-linkedin]').forEach(function(icon) {
+    icon.style.cursor = "pointer";
+    icon.addEventListener('click', function(e) {
+        if (isMobile()) {
+            e.preventDefault();
+            const username = icon.getAttribute('data-linkedin');
+            // Tente d’ouvrir l’app LinkedIn, sinon ouvre le site web
+            window.location.href = "linkedin://in/" + username;
+            setTimeout(function() {
+                window.location.href = "https://www.linkedin.com/in/" + username + "/";
+            }, 500);
+        }
+        // Sur desktop, comportement normal (ouvre le lien dans un nouvel onglet)
+    });
+});
 document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
     icon.style.cursor = "pointer";
     icon.addEventListener('click', function() {
