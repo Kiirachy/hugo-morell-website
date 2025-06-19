@@ -1,0 +1,73 @@
+[
+    {
+        "group": "DADA",
+        "project": {
+            "project-name": "Ils Étaient des Millions",
+            "project-participation": "Documentaire - Fabrication des séquences animées - Prestation",
+            "project-time": "septembre 2023 à avril 2025 - 1 an et 8 mois",
+            "project-expertise": [
+                {
+                    "project-pipeline": [
+                        "2D parallaxe",
+                        "3D",
+                        "3D temps réel"
+                    ],
+                    "project-software": [
+                        "ShotGrid",
+                        "Microsoft suite",
+                        "Storyboard Pro",
+                        "Media Encoder",
+                        "Anglais"
+                    ],
+                    "project-skill": [
+                        "Suivi",
+                        "Dépouillement",
+                        "Préparation de pack",
+                        "Relation client",
+                        "Établissement de budget et planning",
+                        "Établissement de quota",
+                        "Recherche de talent",
+                        "Conduite d'entretien",
+                        "Rédaction de contrat",
+                        "Contrôle de gestion",
+                        "Suivi de trésorerie",
+                        "Administration IT",
+                        "Gestion de licence",
+                        "Livraison et archivage"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "group": "HOOFS",
+        "project": {
+            "project-name": "Les Hoofs de TFou",
+            "project-participation": "Interstitiels - Fabrication de la saison 10 à 25 - Prestation",
+            "project-time": "septembre 2022 à avril 2025 - 2 ans et 8 mois",
+            "project-expertise": [
+                {
+                    "project-pipeline": [
+                        "3D",
+                        "3D temps réel"
+                    ],
+                    "project-software": [
+                        "ShotGrid",
+                        "Microsoft suite",
+                        "Media Encoder"
+                    ],
+                    "project-skill": [
+                        "Suivi",
+                        "Établissement de budget et planning",
+                        "Établissement de quota",
+                        "Rédaction de contrat",
+                        "Contrôle de gestion",
+                        "Administration IT",
+                        "Gestion de licence",
+                        "Livraison et archivage"
+                    ]
+                }
+            ]
+        }
+    }
+]

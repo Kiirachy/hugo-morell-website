@@ -1,3 +1,5 @@
+// CONTACT COPY
+
 function showCopyMessage(message) {
     let notif = document.createElement('div');
     notif.textContent = message;
@@ -81,28 +83,92 @@ document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const section = document.querySelector('.skill-section');
-    const modules = Array.from(document.querySelectorAll('.skill-module'));
-    const dots = Array.from(document.querySelectorAll('.skill-dots .dot'));
+// EXPERTISE FILTER
 
-    function updateDots() {
-        // Trouve le module le plus centré dans la fenêtre
-        let minDiff = Infinity, activeIdx = 0;
-        modules.forEach((mod, i) => {
-            const rect = mod.getBoundingClientRect();
-            const diff = Math.abs(rect.left + rect.width/2 - window.innerWidth/2);
-            if (diff < minDiff) {
-                minDiff = diff;
-                activeIdx = i;
+window.activeFilters = new Set();
+
+document.querySelectorAll('.project-pipeline, .project-software, .project-skill').forEach(function(expertiseEl) {
+    expertiseEl.style.cursor = "pointer";
+    expertiseEl.addEventListener('click', function() {
+        const expertise = expertiseEl.textContent.trim();
+
+        // Ajoute ou retire l'expertise du Set
+        if (window.activeFilters.has(expertise)) {
+            window.activeFilters.delete(expertise);
+        } else {
+            window.activeFilters.add(expertise);
+        }
+
+        // Si aucun filtre actif, tout afficher
+        if (window.activeFilters.size === 0) {
+            document.querySelectorAll('.project').forEach(function(project) {
+                project.style.display = '';
+            });
+        } else {
+            // Afficher les projets qui contiennent TOUTES les expertises sélectionnées
+            document.querySelectorAll('.project').forEach(function(project) {
+                const projectExpertises = Array.from(project.querySelectorAll('.project-pipeline, .project-software, .project-skill'))
+                    .map(el => el.textContent.trim());
+                const hasAll = Array.from(window.activeFilters).every(f => projectExpertises.includes(f));
+                project.style.display = hasAll ? '' : 'none';
+            });
+        }
+
+        // Met à jour la classe active sur les boutons
+        document.querySelectorAll('.project-pipeline, .project-software, .project-skill').forEach(el => {
+            if (window.activeFilters.has(el.textContent.trim())) {
+                el.classList.add('active-filter');
+            } else {
+                el.classList.remove('active-filter');
             }
         });
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[activeIdx].classList.add('active');
-    }
-
-    section.addEventListener('scroll', () => {
-        window.requestAnimationFrame(updateDots);
     });
-    updateDots();
+});
+
+//TOGGLE PROJECTS
+
+document.querySelectorAll('.toggle-group-projects').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        const groupProjects = btn.closest('.group-container').nextElementSibling;
+        if (groupProjects && groupProjects.classList.contains('group-projects')) {
+            groupProjects.classList.toggle('collapsed');
+            btn.classList.toggle('collapsed', groupProjects.classList.contains('collapsed'));
+        }
+    });
+});
+
+document.querySelectorAll('.group-info').forEach(function(info) {
+    info.style.cursor = "pointer";
+    info.addEventListener('click', function() {
+        // Trouve le parent .group
+        const group = info.closest('.group');
+        if (!group) return;
+
+        // Trouve le .group-projects dans ce .group
+        const groupProjects = group.querySelector('.group-projects');
+        // Trouve le bouton flèche dans ce .group
+        const toggleBtn = group.querySelector('.toggle-group-projects');
+
+        if (groupProjects) {
+            groupProjects.classList.toggle('collapsed');
+            if (toggleBtn) {
+                toggleBtn.classList.toggle('collapsed', groupProjects.classList.contains('collapsed'));
+            }
+        }
+    });
+});
+
+// BACK TO TOP BUTTON
+// Affiche le bouton quand on scrolle vers le bas
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('back-to-top');
+    if (window.scrollY > 300) {
+        btn.style.display = 'flex';
+    } else {
+        btn.style.display = 'none';
+    }
+});
+// Scroll doux vers le haut au clic
+document.getElementById('back-to-top').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });

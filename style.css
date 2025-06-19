@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Raleway';
+    margin: 5vh 15vw 5vh 15vw;
 }
 
 p {
@@ -18,227 +19,306 @@ strong {
 /* --------------------------------------- header --------------------------------------- */
 
 .header {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    place-items: center;
-    align-content: center;
-    gap: 8vh;
-    height: 100dvh
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+    height: 12rem;
+    margin-bottom: 15vh;
+
 }
 
 .photo {
-    width: clamp(15rem, 20vw, 30rem);
+    height: 100%;
 }
 
 .intro {
-    text-align: center;
-    line-height: 0.76;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    align-items: flex-start;
 }
 
 .name {
-    font-size: clamp(2rem, 3vw, 5rem);
+    font-size: clamp(4rem, 4rem, 8rem);
+    margin: 1vh 0 1vh 0;
     font-weight: bold;
     color: #74876c;
     text-shadow: 2px 2px 0px rgb(168, 180, 164);
 }
 
 .text-intro {
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 3vh, 4rem);
     filter: opacity(70%);
     font-style: italic;
+    line-height: 1;
 }
 
 .contact-list {
     display: flex;
+    flex-direction: column;
     padding: 0rem;
     list-style: none;
-    gap: clamp(1rem, 1.5vw, 2.5rem);
-    justify-content: center;
-}
-.contact-logo{
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-    .contact-logo:hover,.contact-logo:focus {
-        transform: scale(1.25);
-    }
-    
-.contact-logo {
-    width: clamp(3rem, 4vw, 6rem);
+    justify-content: space-around;
 }
 
-/* --------------------------------------- sections --------------------------------------- */
-    .section-title {
-        font-size: clamp(1.5rem, 2vw, 3rem);
-        font-weight: bold;
-        margin: 5dvh 0%;
-        text-align: center;
-        color: #74876c;
-        text-shadow: 2px 2px 0px rgb(168, 180, 164);
-    }
+.contact-logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: clamp(2rem, 2vw, 2.5rem);
+}
+
+.contact-logo:hover,
+.contact-logo:focus {
+    transform: scale(1.25);
+}
+
+
+
+/* --------------------------------------- all sections --------------------------------------- */
+
+.section-title {
+    font-size: clamp(3.5rem, 3.5rem, 6rem);
+    font-weight: bold;
+    color: #74876c;
+    text-shadow: 2px 2px 0px rgb(168, 180, 164);
+    margin-bottom: 6rem;
+}
 
 /* --------------------------------------- resume section --------------------------------------- */
 
-/* modify all the resume */
+/* modify each group section */
 
-.resume-sections {
+.group {
     display: grid;
-    grid-template-columns: 61% 39%;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 5px;
-    column-gap: 5px;
-    margin: 0 4vw 4vh 4vw;
-}
-
-/* modify the main resume module */
-
-.main-resume-module {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 5dvw 40dvw auto;
     grid-template-rows: auto auto;
-    font-size: clamp(0.75rem, 0.88vw, 1.5rem);
-    padding: 1vw;
-    border: 2px solid #74876c;
-    border-radius: 8px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    row-gap: 2rem;
+    column-gap: 3dvw;
+    margin-bottom: 3rem;
 }
-    .main-resume-module:hover,.main-resume-module:focus {
-            transform: scale(1.05);
-            background-color: #d1dbc8;
-            position: relative;
-            z-index: 10;
-        }
 
-.main-resume-logo-link {
+.group-logo {
+    display: block;
     grid-column: 1;
     grid-row: 1;
-}
-    .main-resume-logo {
-        width: clamp(3rem, 4vw, 7rem);
-        transition: transform 0.3s ease, filter 0.3s ease;
-        filter: grayscale(100%);
-    }
-        .main-resume-logo:hover,.main-resume-logo:focus {
-            transform: scale(1.07);
-            filter: none;
-        }
-.main-resume-content {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: justify;
+    width: 100%;
+    transition: transform 1s ease, filter 0.3s ease;
+    filter: grayscale(100%);
 }
 
-.main-resume-projects {
+.group-logo:hover,
+.group-logo:focus {
+    filter: none;
+    transform: rotate(180deg);
+}
+
+.group-info {
     grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: clamp(1.5rem, 1.5rem, 3.5rem);
+    transition: transform 0.6s ease, padding 0.3s;
+}
+
+.group-info:hover {
+    background-color: rgb(204, 216, 200);
+    border-radius: 12px;
+    padding-left: 1rem;
+}
+
+.group-name {
+    font-weight: bold;
+    color: #64745d;
+}
+
+.group-contract {
+    font-style: normal;
+}
+
+.group-time {
+    font-style: italic;
+    filter: opacity(70%);
+}
+
+.group-container {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-group-projects {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-group-projects img {
+    transition: transform 0.3s ease;
+    width: 24px;
+    height: 24px;
+}
+
+.toggle-group-projects.collapsed img {
+    transform: rotate(-90deg); /* Flèche vers la droite quand collapsed */
+}
+
+.toggle-group-projects:not(.collapsed) img {
+    transform: rotate(0deg); /* Flèche vers le bas quand ouvert */
+}
+
+.group-projects {
+    grid-column: 2 / 4;
     grid-row: 2;
+    max-height: 5000px;
+    opacity: 1;
+    background: transparent;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.group-projects.collapsed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* modify each project of the group sections */
+
+.project {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: auto auto;
+    row-gap: 2vh;
+    column-gap: 3%;
+    margin-bottom: 2rem;
+    overflow: visible;
+}
+
+.project-logo {
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 8px;
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.project-info {
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 0.5rem;
+    justify-content: space-between;
+    font-size: clamp(1.25rem, 1.25rem, 3.25rem);
+    filter: grayscale;
 }
 
-.project-title {
-    font-size: clamp(0.75rem, 1vw, 1.5rem);
-    margin: 0rem;
-}
-
-    .project-logo {
-        border-radius: 8px;
-        width: clamp(10rem, 9vw, 16rem);
-        transition: transform 0.3s ease, filter 0.3s ease;
-        filter: grayscale(100%);
-    }
-        .project-logo:hover,.project-logo:focus {
-            transform: scale(1.15);
-            filter: none;
-        }
-
-/* modify the derivates resume modules  */
-
-.derivate-resume-module-1,.derivate-resume-module-2 {
-    font-size: clamp(0.75rem, 0.7vw, 1rem);
-    border: 2px solid #74876c;
-    border-radius: 8px;
-    padding: 0.5vw;
-    text-align: justify;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-    .derivate-resume-module-1:hover,.derivate-resume-module-1:focus,.derivate-resume-module-2:hover,.derivate-resume-module-2:focus {
-            transform: scale(1.05);
-            background-color: #d1dbc8;
-            position: relative;
-            z-index: 10;
-
-    }
-
-.derivate-resume-module-1 {
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.derivate-resume-module-2 {
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.derivate-resume-logo {
-    width: clamp(1.5rem, 2.5vw, 3.5rem);
-    filter: grayscale(100%);
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-    .derivate-resume-logo:hover,.derivate-resume-logo:focus {
-        transform: scale(1.07);
-        filter: none;
-    }
-
-/* --------------------------------------- skills section --------------------------------------- */
-
-.skill-section {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    text-align: center;
-    margin: 0 4vw 4vh 4vw;
-    gap: 5px;
-}
-
-.skill-module {
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: 30% auto;
-    border: 2px solid #74876c;
-    border-radius: 8px;
-    padding: clamp(1rem, 1.5vw, 2rem);
-    transition: transform 0.3s ease, filter 0.3s ease;
-    font-size: clamp(0.75rem, 0.88vw, 1.5rem);
-}
-
-    .skill-module:hover,.skill-module:focus {
-        transform: scale(1.07);
-        background-color: #d1dbc8;
-        z-index:10;
-    }
-
-.skill-title {
-    font-size: clamp(1rem, 1vw, 1.5rem);
+.project-name {
     font-weight: bold;
-    color: #74876c;
-    align-self: center;
 }
 
-.skill-list {
-    ;
+.project-participation {
+    font-style: normal;
 }
+
+.project-time {
+    font-style: italic;
+    filter: opacity(70%);
+}
+
+.project-expertise {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: clamp(0.8rem, 0.8rem, 2rem);
+}
+
+.project-pipeline,
+.project-software,
+.project-skill {
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: #74876c;
+}
+
+.project-pipeline {
+    background-color: rgb(204, 216, 200);
+}
+
+.project-skill {
+    border: 1px solid;
+    border-color: #74876c;
+}
+
+.project-pipeline:hover,
+.project-software:hover,
+.project-skill:hover,
+.active-filter {
+    background: #74876c;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.project:hover .project-logo {
+    filter: none;
+}
+
+.project:hover .project-name {
+    color: #64745d;
+}
+
 
 /* --------------------------------------- MOBILE --------------------------------------- */
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:540px) {
+
+    /* --------------------------------------- header --------------------------------------- */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+        height: 60dvh;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .contact-list {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .contact-logo {
+        width: 3rem;
+    }
+
     /* --------------------------------------- resume --------------------------------------- */
     /* modify the main resume module */
 
-    .resume-sections {
+    .group-section {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         row-gap: 1vh;
@@ -252,11 +332,12 @@ strong {
         padding: 8vw;
         place-items: center;
     }
-        .main-resume-module:hover,
-.main-resume-module:focus {
-                z-index: 10;
-                font-size: clamp(1rem, 2vw, 3rem);
-            }
+
+    .main-resume-module:hover,
+    .main-resume-module:focus {
+        z-index: 10;
+        font-size: clamp(1rem, 2vw, 3rem);
+    }
 
     .main-resume-logo {
         width: clamp(5rem, 8vw, 10rem);
@@ -270,25 +351,30 @@ strong {
         grid-column: 1;
         grid-row: 3;
     }
-        .main-resume-module:hover .project-title,
-.main-resume-module:focus .project-title {
-            z-index: 10;
-            font-size: clamp(1rem, 2vw, 3rem);
-        }
 
-    .project-logo {
-        filter:none;
+    .main-resume-module:hover .project-title,
+    .main-resume-module:focus .project-title {
+        z-index: 10;
+        font-size: clamp(1rem, 2vw, 3rem);
     }
 
-/* modify the derivates module resume */
+    .project-logo {
+        filter: none;
+    }
 
-    .derivate-resume-module-1,.derivate-resume-module-2 {
+    /* modify the derivates module resume */
+
+    .derivate-resume-module-1,
+    .derivate-resume-module-2 {
         padding: 8vw;
         row-gap: 7vw;
         text-align: center;
     }
 
-    .derivate-resume-module-1:hover,.derivate-resume-module-1:focus,.derivate-resume-module-2:hover,.derivate-resume-module-2:focus {
+    .derivate-resume-module-1:hover,
+    .derivate-resume-module-1:focus,
+    .derivate-resume-module-2:hover,
+    .derivate-resume-module-2:focus {
         z-index: 10;
         font-size: clamp(1rem, 2vw, 3rem);
     }
@@ -305,30 +391,38 @@ strong {
 
     .derivate-resume-logo {
         width: clamp(5rem, 8vw, 10rem);
-        filter:none;
+        filter: none;
     }
 
-/* modify all the skill section (responsive) */
+    /* modify all the skill section (responsive) */
 
-.skill-section {
-    display: flex;
-    overflow-x: auto; /* Permet le scroll horizontal (swipe sur mobile) */
-    scroll-snap-type: x mandatory; /* Active l'alignement lors du scroll */
-    -webkit-overflow-scrolling: touch; /* Ajoute l'inertie du scroll sur iOS */
-    column-gap: 1vw;
-}
+    .skill-section {
+        display: flex;
+        overflow-x: auto;
+        /* Permet le scroll horizontal (swipe sur mobile) */
+        scroll-snap-type: x mandatory;
+        /* Active l'alignement lors du scroll */
+        -webkit-overflow-scrolling: touch;
+        /* Ajoute l'inertie du scroll sur iOS */
+        column-gap: 1vw;
+    }
+
     .skill-module {
-        scroll-snap-align: center; /* Centre chaque module lors du scroll (snap) */
+        scroll-snap-align: center;
+        /* Centre chaque module lors du scroll (snap) */
         flex: 0 0 80vw;
     }
-        .skill-module:hover,
-        .skill-module:focus {
-            font-size: clamp(1rem, 2vw, 3rem);
-            transform: scale(1);
-        }
-            .skill-module:hover .skill-title, .skill-module:focus .skill-title {
-                font-size: clamp(1.25rem, 1.25vw, 1.75rem);
-            }
+
+    .skill-module:hover,
+    .skill-module:focus {
+        font-size: clamp(1rem, 2vw, 3rem);
+        transform: scale(1);
+    }
+
+    .skill-module:hover .skill-title,
+    .skill-module:focus .skill-title {
+        font-size: clamp(1.25rem, 1.25vw, 1.75rem);
+    }
 
     .skill-dots {
         display: flex;
@@ -336,15 +430,41 @@ strong {
         gap: 1rem;
         margin-bottom: 2rem;
     }
-    
-        .dot {
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 50%;
-            background: #d1dbc8;
-            display: inline-block;
-        }
-            .dot.active {
-                background: #74876c;
-            }
+
+    .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #d1dbc8;
+        display: inline-block;
+    }
+
+    .dot.active {
+        background: #74876c;
+    }
 }
+
+/* back to top button */
+.button--back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #74876c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.button--back-to-top:hover {
+    opacity: 1;
+}
+
