@@ -20,8 +20,8 @@ strong {
 
 .header {
     display: flex;
-    justify-content: space-between;
     gap: 4vw;
+    width:100%;
     height: 12rem;
     margin-bottom: 15vh;
 
@@ -64,7 +64,7 @@ strong {
 
 .contact-logo {
     transition: transform 0.3s ease, filter 0.3s ease;
-    width: clamp(2rem, 2vw, 2.5rem);
+    width: clamp(3rem, 3rem, 4rem);
 }
 
 .contact-logo:hover,
@@ -74,17 +74,18 @@ strong {
 
 
 
-/* --------------------------------------- all sections --------------------------------------- */
+/* --------------------------------------- title --------------------------------------- */
 
 .section-title {
-    font-size: clamp(3.5rem, 3.5rem, 6rem);
+    display:flex;
+    font-size: clamp(2.5rem, 3.5rem, 6rem);
     font-weight: bold;
     color: #74876c;
     text-shadow: 2px 2px 0px rgb(168, 180, 164);
     margin-bottom: 6rem;
 }
 
-/* --------------------------------------- resume section --------------------------------------- */
+/* --------------------------------------- group section --------------------------------------- */
 
 /* modify each group section */
 
@@ -119,6 +120,7 @@ strong {
     padding: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 12px;
     font-size: clamp(1.5rem, 1.5rem, 3.5rem);
     transition: transform 0.6s ease, padding 0.3s;
 }
@@ -282,173 +284,11 @@ strong {
     color: #64745d;
 }
 
-
-/* --------------------------------------- MOBILE --------------------------------------- */
-
-@media screen and (max-width:540px) {
-
-    /* --------------------------------------- header --------------------------------------- */
-    .header {
-        flex-direction: column;
-        align-items: center;
-        gap: 4vh;
-        height: 60dvh;
-    }
-
-    .photo {
-        width: 100%;
-        height: auto;
-    }
-
-    .intro {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .contact-list {
-        flex-direction: row;
-        width: auto;
-    }
-
-    .contact-logo {
-        width: 3rem;
-    }
-
-    /* --------------------------------------- resume --------------------------------------- */
-    /* modify the main resume module */
-
-    .group-section {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        row-gap: 1vh;
-    }
-
-    .main-resume-module {
-        grid-row: 1;
-        row-gap: 6vw;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        padding: 8vw;
-        place-items: center;
-    }
-
-    .main-resume-module:hover,
-    .main-resume-module:focus {
-        z-index: 10;
-        font-size: clamp(1rem, 2vw, 3rem);
-    }
-
-    .main-resume-logo {
-        width: clamp(5rem, 8vw, 10rem);
-    }
-
-    .main-resume-content {
-        text-align: center;
-    }
-
-    .main-resume-projects {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .main-resume-module:hover .project-title,
-    .main-resume-module:focus .project-title {
-        z-index: 10;
-        font-size: clamp(1rem, 2vw, 3rem);
-    }
-
-    .project-logo {
-        filter: none;
-    }
-
-    /* modify the derivates module resume */
-
-    .derivate-resume-module-1,
-    .derivate-resume-module-2 {
-        padding: 8vw;
-        row-gap: 7vw;
-        text-align: center;
-    }
-
-    .derivate-resume-module-1:hover,
-    .derivate-resume-module-1:focus,
-    .derivate-resume-module-2:hover,
-    .derivate-resume-module-2:focus {
-        z-index: 10;
-        font-size: clamp(1rem, 2vw, 3rem);
-    }
-
-    .derivate-resume-module-1 {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    .derivate-resume-module-2 {
-        grid-row: 3;
-        grid-column: 1;
-    }
-
-    .derivate-resume-logo {
-        width: clamp(5rem, 8vw, 10rem);
-        filter: none;
-    }
-
-    /* modify all the skill section (responsive) */
-
-    .skill-section {
-        display: flex;
-        overflow-x: auto;
-        /* Permet le scroll horizontal (swipe sur mobile) */
-        scroll-snap-type: x mandatory;
-        /* Active l'alignement lors du scroll */
-        -webkit-overflow-scrolling: touch;
-        /* Ajoute l'inertie du scroll sur iOS */
-        column-gap: 1vw;
-    }
-
-    .skill-module {
-        scroll-snap-align: center;
-        /* Centre chaque module lors du scroll (snap) */
-        flex: 0 0 80vw;
-    }
-
-    .skill-module:hover,
-    .skill-module:focus {
-        font-size: clamp(1rem, 2vw, 3rem);
-        transform: scale(1);
-    }
-
-    .skill-module:hover .skill-title,
-    .skill-module:focus .skill-title {
-        font-size: clamp(1.25rem, 1.25vw, 1.75rem);
-    }
-
-    .skill-dots {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .dot {
-        width: 0.5rem;
-        height: 0.5rem;
-        border-radius: 50%;
-        background: #d1dbc8;
-        display: inline-block;
-    }
-
-    .dot.active {
-        background: #74876c;
-    }
-}
-
 /* back to top button */
 .button--back-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    position:fixed;
+    bottom:2rem;
+    right:2rem;
     background: #74876c;
     color: #fff;
     border: none;
@@ -467,4 +307,103 @@ strong {
 .button--back-to-top:hover {
     opacity: 1;
 }
+
+/* --------------------------------------- MOBILE --------------------------------------- */
+
+@media screen and (max-width:1560px) {
+
+    /* --------------------------------------- header --------------------------------------- */
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+        height: auto;
+    }
+
+    .photo {
+        max-width: 60dvw;
+    }
+
+    .intro {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-list {
+        flex-direction: row;
+        width: auto;
+        gap:1rem;
+    }
+
+/* --------------------------------------- title --------------------------------------- */
+
+.section-title {
+    justify-content: center;
+}
+
+/* --------------------------------------- group section --------------------------------------- */
+
+/* modify each group section */
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #64745d;
+    border-radius: 12px;
+    padding:2rem;
+    text-align: center;
+}
+
+.group-logo {
+    width: 25dvw;
+    filter:none;
+}
+
+.group-info:hover {
+    padding: 0.5rem;
+}
+
+/* modify each project of the group sections */
+
+.project {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+
+.project-logo {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: none;
+}
+
+.project-info {
+    filter: none;
+}
+
+.project-name {
+    color: #64745d;
+}
+
+.project-expertise {
+    display:none;
+}
+
+/* back to top button */
+.button--back-to-top {
+    right:0.7rem;
+    bottom:0.7rem;
+}
+
+}
+
+
 
