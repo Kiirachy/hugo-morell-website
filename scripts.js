@@ -184,10 +184,56 @@ window.addEventListener('scroll', function() {
         if (photo) photo.src = 'images/photo_banner.png';
     } else {
         header.classList.remove('scrolled');
-        if (photo) photo.src = 'images/photo.png';
+        if (photo) photo.src = 'animation/1.png'; // Utilise la première image de l'animation au lieu de photo.png
     }
 });
 // Scroll doux vers le haut au clic
 document.getElementById('back-to-top').addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ANIMATION IMAGE PAR IMAGE POUR LA PHOTO DE PROFIL
+// Ce code gère l'animation de la photo de profil : figée sur la première image par défaut,
+// et joue en boucle lors du mouseover.
+
+document.addEventListener('DOMContentLoaded', function() {
+    const photo = document.querySelector('.photo');
+    if (!photo) return;
+
+    // Tableau des images de l'animation (de 1.png à 18.png dans le dossier animation)
+    const animationFrames = [];
+    for (let i = 1; i <= 18; i++) {
+        animationFrames.push('animation/' + i + '.png');
+    }
+
+    let animationInterval; // Variable pour stocker l'intervalle de l'animation
+    let currentFrame = 0; // Index de l'image actuelle
+
+    // Fonction pour jouer l'animation en boucle
+    function playAnimation() {
+        // Ne joue l'animation que si non scrolled
+        if (window.scrollY > 50) return;
+        animationInterval = setInterval(() => {
+            currentFrame = (currentFrame + 1) % animationFrames.length; // Passe à l'image suivante, boucle à 0
+            photo.src = animationFrames[currentFrame];
+        }, 100); // Change d'image toutes les 100ms (ajustable pour la vitesse)
+    }
+
+    // Fonction pour arrêter l'animation et revenir à la bonne image selon l'état scrolled
+    function stopAnimation() {
+        clearInterval(animationInterval);
+        if (window.scrollY > 50) {
+            photo.src = 'images/photo_banner.png'; // Si scrolled, force photo_banner
+        } else {
+            currentFrame = 0;
+            photo.src = animationFrames[0]; // Sinon, remet la première image de l'animation
+        }
+    }
+
+    // Événements mouseover et mouseout sur la photo
+    photo.addEventListener('mouseover', playAnimation);
+    photo.addEventListener('mouseout', stopAnimation);
+
+    // Initialise la photo sur la première image au chargement
+    photo.src = animationFrames[0];
 });
