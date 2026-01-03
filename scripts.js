@@ -1,4 +1,12 @@
-// CONTACT COPY
+// Ouvrir tous les projets au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.group-projects').forEach(function(projects) {
+        projects.classList.remove('collapsed');
+    });
+    document.querySelectorAll('.toggle-group-projects').forEach(function(btn) {
+        btn.classList.remove('collapsed');
+    });
+});
 
 function showCopyMessage(message) {
     let notif = document.createElement('div');
@@ -166,6 +174,17 @@ window.addEventListener('scroll', function() {
         btn.style.display = 'flex';
     } else {
         btn.style.display = 'none';
+    }
+
+    // HEADER SCROLL EFFECT
+    const header = document.querySelector('.header');
+    const photo = document.querySelector('.photo');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+        if (photo) photo.src = 'images/photo_banner.png';
+    } else {
+        header.classList.remove('scrolled');
+        if (photo) photo.src = 'images/photo.png';
     }
 });
 // Scroll doux vers le haut au clic

@@ -13,10 +13,14 @@
 <body>
     <!-- Header section -->
     <div class="header">
-        <img class="photo" src="images\photo.png" alt="photo de profil">
-        <div class="intro">
-            <h1 class="name">Hugo Morell</h1>
-            <p class="text-intro">Enchanté, voici la liste de mes expériences pertinentes dans le secteur du cinéma d'animation. A très bientôt pour de nouveaux projets !</p>
+        <div class="header_left">
+            <img class="photo" src="images\photo.png" alt="photo de profil">
+            <div class="name">
+                <h1>Hugo Morell</h1>
+            </div>
+            <div class="job">
+                <p>Chargé de production</p>
+            </div>
         </div>
         <ul class="contact-list">
             <li><img class="contact-logo" src="images\phone.png" alt="logo" data-copy="07 61 14 44 03"></li>
@@ -27,725 +31,729 @@
             </li>
         </ul>
     </div>
+    <!-- webpage section -->
+    <div class="webpage">
+        <!-- Experiences section -->
+        <h2 id="experiences" class="section-title">Expériences</h2>
+        <!-- ASTRO group section -->
+        <div id="ASTRO" class="group">
+            <div class="group-logo">
+                <a href="https://www.lesastronautes.fr/" target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\ASTRO-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="group-info">
+                <div class="group-name">Les Astronautes</div>
+                <div class="group-contract">Chargé de production - CDDu</div>
+                <div class="group-time">septembre 2025 à aujourd'hui</div>
+            </div>
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
+            </div>
+            <!-- Projects section -->
+            <div class="group-projects collapsed">
+                <div id="CHE" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.auvergnerhonealpes-cinema.fr/film/les-survivants-du-che/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\CHE-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Les Survivants du Che</div>
+                        <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
+                        </div>
+                        <div class="project-time">octobre 2025 à février 2026 - 5 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-pipeline">2D parallaxe</div>
+                        <div class="project-software">Kitsu</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Photoshop</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Conduite d'entretien</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="CDT" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.lesastronautes.fr/" target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\CDT-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Le Chagrin des Tournesols</div>
+                        <div class="project-participation">Court métrage - Compositing du film - Production déléguée
+                        </div>
+                        <div class="project-time">octobre 2025 à janvier 2026 - 4 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-software">Kitsu</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="MET" class="project">
+                    <div class="project-logo">
+                        <a href="https://eklektik.be/film/metisses-cinq-femmes-contre-limpunite/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\MET-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Métisses, Cinq femmes contre l'impunité</div>
+                        <div class="project-participation">Documentaire - Colorisation et compositing des séquences
+                            animées - Prestation
+                        </div>
+                        <div class="project-time">octobre 2025 à décembre 2025 - 3 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-software">Kitsu</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="GRO" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.bobbypills.com/projects" target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\GRO-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Les Groos</div>
+                        <div class="project-participation">Série - Layout et animation des pastilles animées -
+                            Prestation
+                        </div>
+                        <div class="project-time">octobre 2025 à novembre 2025 - 2 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-software">Kitsu</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Conduite d'entretien</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- DADA group section -->
+        <div id="DADA" class="group">
+            <div class="group-logo">
+                <a href="https://www.dada-animation.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\DADA-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="group-info">
+                <div class="group-name">Dada! Animation</div>
+                <div class="group-contract">Chargé de production - CDDu</div>
+                <div class="group-time">septembre 2022 à avril 2025 - 2 ans et 8 mois</div>
+            </div>
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
+            </div>
+            <!-- Projects section -->
+            <div class="group-projects collapsed">
+                <div id="IEDM" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/ils-etaient-des-millions/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\IEDM-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Ils Étaient des Millions</div>
+                        <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
+                        </div>
+                        <div class="project-time">septembre 2023 à avril 2025 - 1 an et 8 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D parallaxe</div>
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Storyboard Pro</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Relation partenaire</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Conduite d'entretien</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Suivi de trésorerie</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="HOOFS" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/les-hoofs-de-tfou/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\HOOF-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Les Hoofs de TFou</div>
+                        <div class="project-participation">Interstitiels - Fabrication de la saison 10 à 25 - Prestation
+                        </div>
+                        <div class="project-time">septembre 2022 à avril 2025 - 2 ans et 8 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="PHEND" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/archeoconcert-film-documentaire-notre-dame-de-paris/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\PHEND-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">L’Archéoconcert : le passé a des oreilles à Notre-Dame</div>
+                        <div class="project-participation">Documentaire - Fabrication du film - Prestation
+                        </div>
+                        <div class="project-time">mars 2024 à mars 2025 - 1 an</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="SIRA" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/elisabetta-sirani/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\SIRA-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Elisabetta Sirani</div>
+                        <div class="project-participation">Documentaire - Développement et fabrication d'une séquence
+                            test -
+                            Prestation
+                        </div>
+                        <div class="project-time">mars 2025 à mars 2025 - 1 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D parallaxe</div>
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Relation client</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Conduite d'entretien</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="GOYA" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/chantal-goya-marie-rose-et-le-mysterieux-voyage/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\GOYA-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Chantal Goya : Marie-Rose et le Mystérieux Voyage</div>
+                        <div class="project-participation">Long métrage - Développement et fabrication d'un visuel 3D -
+                            Prestation
+                        </div>
+                        <div class="project-time">avril 2024 à juil. 2024 - 4 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                    </div>
+                </div>
+                <div id="BBKO" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/bebe-koala/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\BBKO-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Bébé Koala</div>
+                        <div class="project-participation">Série - Développement et Fabrication d'une animation -
+                            Prestation
+                        </div>
+                        <div class="project-time">janvier 2023 à janvier 2023 - 1 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Administration IT</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="RECY" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/recyclopia/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\RECY-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Recyclopia</div>
+                        <div class="project-participation">Série - Fabrication du pilote - Production déléguée
+                        </div>
+                        <div class="project-time">novembre 2023 à décembre 2023 - 2 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Relation partenaire</div>
+                        <div class="project-skill">Recherche de talent</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="PATI" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/french-patisserie/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\PATI-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">French Patisserie</div>
+                        <div class="project-participation">Série - Fabrication du pilote - Production déléguée
+                        </div>
+                        <div class="project-time">septembre 2023 à octobre 2023 - 2 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="TRIM" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/trimaros/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\TRIM-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Trimaros</div>
+                        <div class="project-participation">Série - Développement et fabrication du pilote - Prestation
+                        </div>
+                        <div class="project-time">mai 2023 à août 2023 - 4 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-pipeline">Motion Design</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="CHAM" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/remede-de-chameau/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\CHAM-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Remède de chameau</div>
+                        <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
+                        </div>
+                        <div class="project-time">mars 2023 à avril 2023 - 2 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-pipeline">2D parallaxe</div>
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-pipeline">Motion Design</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                    </div>
+                </div>
+                <div id="PIF" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/pif-et-hercule-se-mettent-au-vert/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\PIF-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Pif et Hercule se mettent au vert</div>
+                        <div class="project-participation">Série - Développement et fabrication du pilote - Production
+                            déléguée
+                        </div>
+                        <div class="project-time">février 2023 à avril 2023 - 3 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-pipeline">Motion Design</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Media Encoder</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+                <div id="CAPI" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.dada-animation.com/projets/capitaine-tonus/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\CAPI-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Capitaine Tonus</div>
+                        <div class="project-participation">Série - Fabrication de la saison 1 - Production déléguée
+                        </div>
+                        <div class="project-time">septembre 2022 à fevrier 2023 - 6 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">3D</div>
+                        <div class="project-pipeline">3D temps réel</div>
+                        <div class="project-software">ShotGrid</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Premiere</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Préparation de pack</div>
+                        <div class="project-skill">Rédaction de contrat</div>
+                        <div class="project-skill">Gestion de licence</div>
+                        <div class="project-skill">Livraison et archivage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="GOBELINS_2" class="group">
+            <div class="group-logo">
+                <a href="https://www.gobelins.fr" target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\GOBELINS-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="group-info">
+                <div class="group-name">Gobelins, l'école de l'image</div>
+                <div class="group-contract">Coordinateur de projets - CDD</div>
+                <div class="group-time">octobre 2020 à juillet 2022 - 1 an et 9 mois</div>
+            </div>
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
+            </div>
+            <div class="group-projects collapsed">
+                <div id="ASF" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.gobelins.fr/gobelins-linternational/animation-sans-frontiere-asf"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\ASF-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Animation Sans Frontière</div>
+                        <div class="project-participation">Formation Européenne - Organisation du programme
+                        </div>
+                        <div class="project-time">septembre 2021 à juillet 2022 - 11 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">Pitch</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Relation partenaire</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Demande de subvention</div>
+                    </div>
+                </div>
+                <div id="SUMMER" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.gobelins-school.com/animated-filmmaking/programmes/summer-schools"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\SUMMER-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Summer Schools</div>
+                        <div class="project-participation">Formation continue - Organisation du programme
+                        </div>
+                        <div class="project-time">septembre 2021 à juillet 2022 - 11 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">Pitch</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                    </div>
+                </div>
+                <div id="ONLINE" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.gobelins-school.com/animated-filmmaking/online-courses" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\ONLINE-project.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-name">Online Courses</div>
+                        <div class="project-participation">Formation continue - Organisation du programme
+                        </div>
+                        <div class="project-time">octobre 2020 à juillet 2021 - 11 mois</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">Pitch</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Experiences section -->
-    <h2 id="experiences" class="section-title">Expériences</h2>
-    <!-- ASTRO group section -->
-    <div id="ASTRO" class="group">
-        <div class="group-logo">
-            <a href="https://www.lesastronautes.fr/" target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\ASTRO-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Les Astronautes</div>
-            <div class="group-contract">Chargé de production - CDDu</div>
-            <div class="group-time">septembre 2025 à aujourd'hui</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <!-- Projects section -->
-        <div class="group-projects collapsed">
-            <div id="CHE" class="project">
-                <div class="project-logo">
-                    <a href="https://www.auvergnerhonealpes-cinema.fr/film/les-survivants-du-che/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\CHE-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Les Survivants du Che</div>
-                    <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
-                    </div>
-                    <div class="project-time">octobre 2025 à février 2026 - 5 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-pipeline">2D parallaxe</div>
-                    <div class="project-software">Kitsu</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Photoshop</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Conduite d'entretien</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+        <!-- Training section -->
+        <h2 id="formations" class="section-title">Formations</h2>
+        <div id="GOBELINS_1" class="group">
+            <div class="group-logo">
+                <a href="https://www.gobelins.fr/cinema-animation/formations/ca33-licence-gestion-production-audiovisuelle"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\GOBELINS-logo.png" alt="logo">
+                </a>
             </div>
-            <div id="CDT" class="project">
-                <div class="project-logo">
-                    <a href="https://www.lesastronautes.fr/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\CDT-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Le Chagrin des Tournesols</div>
-                    <div class="project-participation">Court métrage - Compositing du film - Production déléguée
-                    </div>
-                    <div class="project-time">octobre 2025 à janvier 2026 - 4 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-software">Kitsu</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+            <div class="group-info">
+                <div class="group-name">Gobelins, l'école de l'image</div>
+                <div class="group-contract">Licence Professionnelle de Gestion Audiovisuelle - Alternance</div>
+                <div class="group-time">septembre 2022 à août 2023 - 1 an</div>
             </div>
-            <div id="MET" class="project">
-                <div class="project-logo">
-                    <a href="https://eklektik.be/film/metisses-cinq-femmes-contre-limpunite/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\MET-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Métisses, Cinq femmes contre l'impunité</div>
-                    <div class="project-participation">Documentaire - Colorisation et compositing des séquences animées - Prestation
-                    </div>
-                    <div class="project-time">octobre 2025 à décembre 2025 - 3 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-software">Kitsu</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img class="arrow-down" src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
             </div>
-            <div id="GRO" class="project">
-                <div class="project-logo">
-                    <a href="https://www.bobbypills.com/projects" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\GRO-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Les Groos</div>
-                    <div class="project-participation">Série - Layout et animation des pastilles animées - Prestation
+            <div class="group-projects collapsed">
+                <div id="LUNA" class="project">
+                    <div class="project-logo">
+                        <a href="https://www.gobelins.fr/galerie/el-ombligo-de-la-luna" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-logo" src="images\LUNA-project.png" alt="logo">
+                        </a>
                     </div>
-                    <div class="project-time">octobre 2025 à novembre 2025 - 2 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-software">Kitsu</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Conduite d'entretien</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Livraison et archivage</div>
+                    <div class="project-info">
+                        <div class="project-name">El Ombligo de la Luna</div>
+                        <div class="project-participation">Court métrage - Fabrication du film - École
+                        </div>
+                        <div class="project-time">septembre 2022 à août 2023 - 1 an</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">2D</div>
+                        <div class="project-pipeline">Pitch</div>
+                        <div class="project-software">Kitsu</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-software">Anglais</div>
+                        <div class="project-skill">Dépouillement</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Relation partenaire</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Demande de subvention</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- DADA group section -->
-    <div id="DADA" class="group">
-        <div class="group-logo">
-            <a href="https://www.dada-animation.com/" target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\DADA-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Dada! Animation</div>
-            <div class="group-contract">Chargé de production - CDDu</div>
-            <div class="group-time">septembre 2022 à avril 2025 - 2 ans et 8 mois</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <!-- Projects section -->
-        <div class="group-projects collapsed">
-            <div id="IEDM" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/ils-etaient-des-millions/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\IEDM-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Ils Étaient des Millions</div>
-                    <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
-                    </div>
-                    <div class="project-time">septembre 2023 à avril 2025 - 1 an et 8 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D parallaxe</div>
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Storyboard Pro</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Relation partenaire</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Conduite d'entretien</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Suivi de trésorerie</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+        <div id="AMU" class="group">
+            <div class="group-logo">
+                <a href="https://feg.univ-amu.fr/fr/formation/masters/master-1-dpec-parcours-administration-institutions-culturelles-aic"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\AMU-logo.png" alt="logo">
+                </a>
             </div>
-            <div id="HOOFS" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/les-hoofs-de-tfou/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\HOOF-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Les Hoofs de TFou</div>
-                    <div class="project-participation">Interstitiels - Fabrication de la saison 10 à 25 - Prestation
-                    </div>
-                    <div class="project-time">septembre 2022 à avril 2025 - 2 ans et 8 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+            <div class="group-info">
+                <div class="group-name">Université Aix-Marseille, IUP Arles</div>
+                <div class="group-contract">Master en Administration de Projets Culturels - Alternance</div>
+                <div class="group-time">septembre 2019 à août 2021 - 2 ans</div>
             </div>
-            <div id="PHEND" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/archeoconcert-film-documentaire-notre-dame-de-paris/"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\PHEND-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">L’Archéoconcert : le passé a des oreilles à Notre-Dame</div>
-                    <div class="project-participation">Documentaire - Fabrication du film - Prestation
-                    </div>
-                    <div class="project-time">mars 2024 à mars 2025 - 1 an</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
             </div>
-            <div id="SIRA" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/elisabetta-sirani/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\SIRA-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Elisabetta Sirani</div>
-                    <div class="project-participation">Documentaire - Développement et fabrication d'une séquence test -
-                        Prestation
+            <div class="group-projects collapsed">
+                <div id="ARLESIA" class="project">
+                    <div class="project-logo">
+                        <a href="https://openagenda.com/eu/arles-agenda/events/festival-de-cinema-de-film-en-aiguille"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\ARLESIA-project.png" alt="logo">
+                        </a>
                     </div>
-                    <div class="project-time">mars 2025 à mars 2025 - 1 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D parallaxe</div>
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Relation client</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Conduite d'entretien</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="GOYA" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/chantal-goya-marie-rose-et-le-mysterieux-voyage/"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\GOYA-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Chantal Goya : Marie-Rose et le Mystérieux Voyage</div>
-                    <div class="project-participation">Long métrage - Développement et fabrication d'un visuel 3D -
-                        Prestation
+                    <div class="project-info">
+                        <div class="project-name">Arlesia Obscura</div>
+                        <div class="project-participation">Festival de cinéma - Organisation évênementielle - Associatif
+                        </div>
+                        <div class="project-time">septembre 2019 à août 2020 - 1 an</div>
                     </div>
-                    <div class="project-time">avril 2024 à juil. 2024 - 4 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                </div>
-            </div>
-            <div id="BBKO" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/bebe-koala/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\BBKO-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Bébé Koala</div>
-                    <div class="project-participation">Série - Développement et Fabrication d'une animation - Prestation
+                    <div class="project-expertise">
+                        <div class="project-pipeline">Projection</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Établissement de budget et planning</div>
+                        <div class="project-skill">Programmation</div>
+                        <div class="project-skill">Régie</div>
+                        <div class="project-skill">Suivi</div>
+                        <div class="project-skill">Communication</div>
+                        <div class="project-skill">Relation partenaire</div>
+                        <div class="project-skill">Comptabilité</div>
+                        <div class="project-skill">Contrôle de gestion</div>
+                        <div class="project-skill">Demande de subvention</div>
                     </div>
-                    <div class="project-time">janvier 2023 à janvier 2023 - 1 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Administration IT</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="RECY" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/recyclopia/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\RECY-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Recyclopia</div>
-                    <div class="project-participation">Série - Fabrication du pilote - Production déléguée
-                    </div>
-                    <div class="project-time">novembre 2023 à décembre 2023 - 2 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Relation partenaire</div>
-                    <div class="project-skill">Recherche de talent</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="PATI" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/french-patisserie/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\PATI-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">French Patisserie</div>
-                    <div class="project-participation">Série - Fabrication du pilote - Production déléguée
-                    </div>
-                    <div class="project-time">septembre 2023 à octobre 2023 - 2 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="TRIM" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/trimaros/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\TRIM-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Trimaros</div>
-                    <div class="project-participation">Série - Développement et fabrication du pilote - Prestation
-                    </div>
-                    <div class="project-time">mai 2023 à août 2023 - 4 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-pipeline">Motion Design</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="CHAM" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/remede-de-chameau/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\CHAM-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Remède de chameau</div>
-                    <div class="project-participation">Documentaire - Fabrication des séquences animées - Prestation
-                    </div>
-                    <div class="project-time">mars 2023 à avril 2023 - 2 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-pipeline">2D parallaxe</div>
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-pipeline">Motion Design</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                </div>
-            </div>
-            <div id="PIF" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/pif-et-hercule-se-mettent-au-vert/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\PIF-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Pif et Hercule se mettent au vert</div>
-                    <div class="project-participation">Série - Développement et fabrication du pilote - Production
-                        déléguée
-                    </div>
-                    <div class="project-time">février 2023 à avril 2023 - 3 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-pipeline">Motion Design</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Media Encoder</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Livraison et archivage</div>
-                </div>
-            </div>
-            <div id="CAPI" class="project">
-                <div class="project-logo">
-                    <a href="https://www.dada-animation.com/projets/capitaine-tonus/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\CAPI-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Capitaine Tonus</div>
-                    <div class="project-participation">Série - Fabrication de la saison 1 - Production déléguée
-                    </div>
-                    <div class="project-time">septembre 2022 à fevrier 2023 - 6 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">3D</div>
-                    <div class="project-pipeline">3D temps réel</div>
-                    <div class="project-software">ShotGrid</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Premiere</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Préparation de pack</div>
-                    <div class="project-skill">Rédaction de contrat</div>
-                    <div class="project-skill">Gestion de licence</div>
-                    <div class="project-skill">Livraison et archivage</div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="GOBELINS_2" class="group">
-        <div class="group-logo">
-            <a href="https://www.gobelins.fr" target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\GOBELINS-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Gobelins, l'école de l'image</div>
-            <div class="group-contract">Coordinateur de projets - CDD</div>
-            <div class="group-time">octobre 2020 à juillet 2022 - 1 an et 9 mois</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <div class="group-projects collapsed">
-            <div id="ASF" class="project">
-                <div class="project-logo">
-                    <a href="https://www.gobelins.fr/gobelins-linternational/animation-sans-frontiere-asf"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\ASF-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Animation Sans Frontière</div>
-                    <div class="project-participation">Formation Européenne - Organisation du programme
-                    </div>
-                    <div class="project-time">septembre 2021 à juillet 2022 - 11 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">Pitch</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Relation partenaire</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Demande de subvention</div>
-                </div>
+        <div id="MOMA" class="group">
+            <div class="group-logo">
+                <a href="https://formations-en.umontpellier.fr/fr/formations/licence-XA/licence-gestion-hnes9tzv.html"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="group-logo" src="images\MOMA-logo.png" alt="logo">
+                </a>
             </div>
-            <div id="SUMMER" class="project">
-                <div class="project-logo">
-                    <a href="https://www.gobelins-school.com/animated-filmmaking/programmes/summer-schools"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\SUMMER-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Summer Schools</div>
-                    <div class="project-participation">Formation continue - Organisation du programme
-                    </div>
-                    <div class="project-time">septembre 2021 à juillet 2022 - 11 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">Pitch</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                </div>
+            <div class="group-info">
+                <div class="group-name">Montpellier Management</div>
+                <div class="group-contract">Licence de gestion</div>
+                <div class="group-time">septembre 2016 à août 2019 - 3 ans</div>
             </div>
-            <div id="ONLINE" class="project">
-                <div class="project-logo">
-                    <a href="https://www.gobelins-school.com/animated-filmmaking/online-courses" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\ONLINE-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Online Courses</div>
-                    <div class="project-participation">Formation continue - Organisation du programme
+            <div class="group-container">
+                <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
+                    <img src="images\arrow-down.png" alt="Afficher/Masquer">
+                </button>
+            </div>
+            <div class="group-projects collapsed">
+                <div id="HTSU" class="project">
+                    <div class="project-logo">
+                        <a target="_blank" rel="noopener noreferrer">
+                            <img class="project-logo" src="images\HTSU-project.png" alt="logo">
+                        </a>
                     </div>
-                    <div class="project-time">octobre 2020 à juillet 2021 - 11 mois</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">Pitch</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Contrôle de gestion</div>
+                    <div class="project-info">
+                        <div class="project-name">On se demandait...?</div>
+                        <div class="project-participation">Court métrage - Fabrication du film - Associatif
+                        </div>
+                        <div class="project-time">septembre 2017 à août 2018 - 1 an</div>
+                    </div>
+                    <div class="project-expertise">
+                        <div class="project-pipeline">Prise de vue réelle</div>
+                        <div class="project-pipeline">Projection</div>
+                        <div class="project-software">Microsoft suite</div>
+                        <div class="project-skill">Création d'association</div>
+                        <div class="project-skill">Ecriture</div>
+                        <div class="project-skill">Régie</div>
+                        <div class="project-skill">Acting</div>
+                        <div class="project-skill">Communication</div>
+                        <div class="project-skill">Relation partenaire</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Training section -->
-    <h2 id="formations" class="section-title">Formations</h2>
-    <div id="GOBELINS_1" class="group">
-        <div class="group-logo">
-            <a href="https://www.gobelins.fr/cinema-animation/formations/ca33-licence-gestion-production-audiovisuelle"
-                target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\GOBELINS-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Gobelins, l'école de l'image</div>
-            <div class="group-contract">Licence Professionnelle de Gestion Audiovisuelle - Alternance</div>
-            <div class="group-time">septembre 2022 à août 2023 - 1 an</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img class="arrow-down" src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <div class="group-projects collapsed">
-            <div id="LUNA" class="project">
-                <div class="project-logo">
-                    <a href="https://www.gobelins.fr/galerie/el-ombligo-de-la-luna" target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="project-logo" src="images\LUNA-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">El Ombligo de la Luna</div>
-                    <div class="project-participation">Court métrage - Fabrication du film - École
-                    </div>
-                    <div class="project-time">septembre 2022 à août 2023 - 1 an</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">2D</div>
-                    <div class="project-pipeline">Pitch</div>
-                    <div class="project-software">Kitsu</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-software">Anglais</div>
-                    <div class="project-skill">Dépouillement</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Relation partenaire</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Demande de subvention</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="AMU" class="group">
-        <div class="group-logo">
-            <a href="https://feg.univ-amu.fr/fr/formation/masters/master-1-dpec-parcours-administration-institutions-culturelles-aic"
-                target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\AMU-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Université Aix-Marseille, IUP Arles</div>
-            <div class="group-contract">Master en Administration de Projets Culturels - Alternance</div>
-            <div class="group-time">septembre 2019 à août 2021 - 2 ans</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <div class="group-projects collapsed">
-            <div id="ARLESIA" class="project">
-                <div class="project-logo">
-                    <a href="https://openagenda.com/eu/arles-agenda/events/festival-de-cinema-de-film-en-aiguille"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\ARLESIA-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">Arlesia Obscura</div>
-                    <div class="project-participation">Festival de cinéma - Organisation évênementielle - Associatif
-                    </div>
-                    <div class="project-time">septembre 2019 à août 2020 - 1 an</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">Projection</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Établissement de budget et planning</div>
-                    <div class="project-skill">Programmation</div>
-                    <div class="project-skill">Régie</div>
-                    <div class="project-skill">Suivi</div>
-                    <div class="project-skill">Communication</div>
-                    <div class="project-skill">Relation partenaire</div>
-                    <div class="project-skill">Comptabilité</div>
-                    <div class="project-skill">Contrôle de gestion</div>
-                    <div class="project-skill">Demande de subvention</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="MOMA" class="group">
-        <div class="group-logo">
-            <a href="https://formations-en.umontpellier.fr/fr/formations/licence-XA/licence-gestion-hnes9tzv.html"
-                target="_blank" rel="noopener noreferrer">
-                <img class="group-logo" src="images\MOMA-logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="group-info">
-            <div class="group-name">Montpellier Management</div>
-            <div class="group-contract">Licence de gestion</div>
-            <div class="group-time">septembre 2016 à août 2019 - 3 ans</div>
-        </div>
-        <div class="group-container">
-            <button class="toggle-group-projects collapsed" aria-label="Masquer les projets">
-                <img src="images\arrow-down.png" alt="Afficher/Masquer">
-            </button>
-        </div>
-        <div class="group-projects collapsed">
-            <div id="HTSU" class="project">
-                <div class="project-logo">
-                    <a target="_blank" rel="noopener noreferrer">
-                        <img class="project-logo" src="images\HTSU-project.png" alt="logo">
-                    </a>
-                </div>
-                <div class="project-info">
-                    <div class="project-name">On se demandait...?</div>
-                    <div class="project-participation">Court métrage - Fabrication du film - Associatif
-                    </div>
-                    <div class="project-time">septembre 2017 à août 2018 - 1 an</div>
-                </div>
-                <div class="project-expertise">
-                    <div class="project-pipeline">Prise de vue réelle</div>
-                    <div class="project-pipeline">Projection</div>
-                    <div class="project-software">Microsoft suite</div>
-                    <div class="project-skill">Création d'association</div>
-                    <div class="project-skill">Ecriture</div>
-                    <div class="project-skill">Régie</div>
-                    <div class="project-skill">Acting</div>
-                    <div class="project-skill">Communication</div>
-                    <div class="project-skill">Relation partenaire</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <button id="back-to-top" class="button--back-to-top" aria-label="Retour en haut">
+            <svg aria-hidden="true" fill="none" focusable="false" width="17" class="icon icon-arrow-up"
+                viewBox="0 0 12 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M1.222 6.852S4.72 5 5.876 3.148C6.757 5 10.482 6.852 10.482 6.852"></path>
+            </svg>
+        </button>
 
-    <button id="back-to-top" class="button--back-to-top" aria-label="Retour en haut">
-        <svg aria-hidden="true" fill="none" focusable="false" width="17" class="icon icon-arrow-up" viewBox="0 0 12 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                d="M1.222 6.852S4.72 5 5.876 3.148C6.757 5 10.482 6.852 10.482 6.852"></path>
-        </svg>
-    </button>
-
-    <script src="scripts.js"></script>
+        <script src="scripts.js"></script>
 
 </body>
 
