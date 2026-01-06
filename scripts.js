@@ -48,6 +48,7 @@ function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
+// CONTACT ICONS
 document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
     icon.style.cursor = "pointer";
     icon.addEventListener('click', function() {
@@ -68,6 +69,7 @@ document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
     });
 });
 
+//CONTACT LINKEDIN ICON
 document.querySelectorAll('.contact-logo[data-linkedin]').forEach(function(icon) {
     icon.style.cursor = "pointer";
     icon.addEventListener('click', function(e) {
@@ -92,7 +94,6 @@ document.querySelectorAll('.contact-logo[data-copy]').forEach(function(icon) {
 });
 
 // EXPERTISE FILTER
-
 window.activeFilters = new Set();
 
 document.querySelectorAll('.project-pipeline, .project-software, .project-skill').forEach(function(expertiseEl) {
@@ -134,7 +135,6 @@ document.querySelectorAll('.project-pipeline, .project-software, .project-skill'
 });
 
 //TOGGLE PROJECTS
-
 document.querySelectorAll('.toggle-group-projects').forEach(function(btn) {
     btn.addEventListener('click', function() {
         const groupProjects = btn.closest('.group-container').nextElementSibling;
@@ -166,30 +166,18 @@ document.querySelectorAll('.group-info').forEach(function(info) {
     });
 });
 
-// BACK TO TOP BUTTON
-// Affiche le bouton quand on scrolle vers le bas
+// EFFET DE SCROLL SUR LE HEADER
 window.addEventListener('scroll', function() {
-    const btn = document.getElementById('back-to-top');
-    if (window.scrollY > 300) {
-        btn.style.display = 'flex';
-    } else {
-        btn.style.display = 'none';
-    }
-
     // HEADER SCROLL EFFECT
     const header = document.querySelector('.header');
     const photo = document.querySelector('.photo');
-    if (window.scrollY > 50) {
+    if (window.innerWidth >= 1250 && window.scrollY > 50) {
         header.classList.add('scrolled');
         if (photo) photo.src = 'images/photo_banner.png';
     } else {
         header.classList.remove('scrolled');
         if (photo) photo.src = 'animation/1.png'; // Utilise la première image de l'animation au lieu de photo.png
     }
-});
-// Scroll doux vers le haut au clic
-document.getElementById('back-to-top').addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 // ANIMATION IMAGE PAR IMAGE POUR LA PHOTO DE PROFIL
